@@ -29,7 +29,7 @@ head = 4
 tail = 8
 proc_list = 16
 buf = 20
-#enfif
+#endif
 
 startup	= 256		/* chars left in write queue when we restart it */
 
@@ -39,7 +39,7 @@ startup	= 256		/* chars left in write queue when we restart it */
  */
 .align 2
 rs1_interrupt:
-#ifdef __X86__
+## ifdef __X86__
 	pushl $table_list+tail
 	jmp rs_int
 .align 2
